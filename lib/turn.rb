@@ -19,7 +19,7 @@ def position_taken?(board, index)
 end
 
 def valid_move?(board, index)
-  if (index.between?(0, 8)) && !(position_taken?(board, index))
+  if (index.between?(0, 8)) && (position_taken?(board, index))
     true
   else
     false
@@ -31,7 +31,7 @@ index = 0
 puts valid_move?(board, index)
 
 def move(board, index, marker="X")
-  if valid_move?
+  if valid_move?(board, index)
     board[index] = marker
   end
   board
