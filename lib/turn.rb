@@ -16,3 +16,5 @@ def position_taken?(board, index)
   if (board[index] != " " || board[index] != "")
     return true
 end
+
+def move(input, in)
