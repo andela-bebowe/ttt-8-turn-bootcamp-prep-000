@@ -17,7 +17,9 @@ def valid_move?(board, index)
     false
   end
 end
+board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
 
+index = 0
 def position_taken?(board, index)
   if (board[index] != " " || board[index] != "")
     true
