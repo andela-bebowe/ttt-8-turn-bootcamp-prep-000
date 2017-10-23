@@ -15,6 +15,7 @@ end
 def position_taken?(board, index)
   if (board[index] != " " || board[index] != "")
     return true
+  end
 end
 
 def input_to_index(input)
@@ -22,5 +23,8 @@ def input_to_index(input)
 end
 
 def move(board, index, marker = "X")
-
+  if valid_move?
+    board[index] = marker
+  end
+  board
 end
