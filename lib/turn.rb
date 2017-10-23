@@ -11,7 +11,7 @@ def input_to_index(input)
 end
 
 def position_taken?(board, index)
-  if (board[index] != " " || board[index] != "")
+  if board[index] != " " || board[index] != ""
     true
   else
     false
@@ -19,7 +19,7 @@ def position_taken?(board, index)
 end
 
 def valid_move?(board, index)
-  if (index.between?(0, 8)) && (position_taken?(board, index))
+  if index.between?(0, 8) && !position_taken?(board, index)
     true
   else
     false
