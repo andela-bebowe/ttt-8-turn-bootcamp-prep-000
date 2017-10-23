@@ -9,3 +9,7 @@ end
 def valid_move?(board, index, position = "X")
 
 end
+
+def position_taken
+
+end
