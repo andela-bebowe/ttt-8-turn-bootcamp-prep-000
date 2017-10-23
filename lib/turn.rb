@@ -17,6 +17,10 @@ def position_taken?(board, index)
     return true
 end
 
+def input_to_index
+
+end
+
 def move(board, index)
-  
+
 end
