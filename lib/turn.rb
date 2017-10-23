@@ -25,10 +25,6 @@ def valid_move?(board, index)
     false
   end
 end
-board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
-
-index = 0
-puts valid_move?(board, index)
 
 def move(board, index, marker="X")
   if valid_move?(board, index)
